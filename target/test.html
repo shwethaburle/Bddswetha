@@ -1,0 +1,9 @@
+
+Scenario: Register new user by providing in all mandatory fields [90m# src/test/java/features/register.feature:3[0m
+  [32mGiven [0m[32mI navigate to url [0m[32m[1m"https://demo.nopcommerce.com/"[0m        [90m# StepDefinitions.i_navigate_to_url(java.lang.String)[0m
+  [32mWhen [0m[32mI click on register link[0m                                  [90m# StepDefinitions.i_click_on_register_link()[0m
+  [32mThen [0m[32mI should be navigated to register page[0m                    [90m# StepDefinitions.i_should_be_navigated_to_register_page()[0m
+  [32mWhen [0m[32mI select gender[0m                                           [90m# StepDefinitions.i_select_gender()[0m
+  [32mAnd [0m[32mI enter firstName lastName email password confirmPassword[0m  [90m# StepDefinitions.i_enter_first_name_last_name_email_password_confirm_password(io.cucumber.datatable.DataTable)[0m
+  [32mAnd [0m[32mI click on register button[0m                                 [90m# StepDefinitions.i_click_on_register_button()[0m
+  [32mThen [0m[32mregistration should be successful[0m                         [90m# StepDefinitions.registration_should_be_successful()[0m
